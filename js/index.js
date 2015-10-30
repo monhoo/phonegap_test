@@ -35,7 +35,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-		$('#myCarousel').carousel();
+		
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -49,7 +49,7 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 		//myElement.setAttribute('style', 'display:block;');
 		Element.setAttribute('style', 'display:block;');
-$('#myCarousel').hide();
+$('#myCarousel').carousel();
         console.log('Received Event: ' + id);
     }
 };
